@@ -21,6 +21,8 @@ const weisheit = ['Der kluge Bergsteiger grüßt die Bergziege.', 'Ein Pfau, der
 
 let spruch = weisheit[Math.floor(Math.random()*weisheit.length)];
 
+
+//let spruch = randomValueFromArray(weisheit);
 // HTML-Button über JavaScript eine Funktion zuweisen
 
 // Funktion beim laden der Seite aufrufen
@@ -33,15 +35,30 @@ window.addEventListener("load", function() {
      // als Event die Funktion 'test' aufrufen.
      document.getElementById("hierbutton").addEventListener("click", message);
     }
-
+  
    });
    
    function message() {
     alert(spruch);
    }
+ 
+window.addEventListener("load", function() {
 
+    // Überprüfen ob die ID (Button) auf der Seite vorhanden ist (Optional).
+    if (document.getElementById("hierbutton") != null) {
+   
+     // Der ID den Event-Handler 'click' hinzufügen,
+     // als Event die Funktion 'test' aufrufen.
+     document.getElementById("hierbutton").addEventListener("click", message);
+    }
+  
+   });
+   
+   function message() {
+    window.confirm(spruch);
+   }
 
-
+   
 console.log(spruch);
 
 
