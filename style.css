@@ -1,0 +1,26 @@
+body {
+    background-image: url(https://image.freepik.com/vektoren-kostenlos/podium-hintergrund_1017-2249.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hier {
+    opacity:0.6;
+    display: block;
+    justify-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#hierbutton {
+    display: flex;
+    justify-content: center;
+    min-height: auto;
+    min-width: 20em;
+    padding:2em 2em;
+    font-size: 40px;
+    background-color: rgb(10, 131, 131);
+}
